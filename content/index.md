@@ -1,4 +1,5 @@
 ---
 publish: true
-title: " Welcome to My Research Blog publish"
+title: Welcome
 ---
+This is the starting of my new blog
