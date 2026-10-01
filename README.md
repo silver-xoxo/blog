@@ -1,17 +1,23 @@
-# Quartz v5
+<div align="center">
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+# ARMAAN NAIN // Silver
+### `silversec.in` • Offensive Security & Low-Level Exploit Research
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+[![Deploy](https://img.shields.io/badge/Live_Site-silversec.in-ff2a51?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://silversec.in)
+[![Operator](https://img.shields.io/badge/Operator-Armaan_Nain_(silver)-0d1117?style=for-the-badge&logo=hackthebox&logoColor=ff2a51)](https://silversec.in)
+[![Focus](https://img.shields.io/badge/Domain-Win32_Internals_%7C_Kernel-161b22?style=for-the-badge&logo=windows&logoColor=white)](https://silversec.in)
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+</div>
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+---
 
-## Sponsors
+### ⚡ Overview
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+A digital research garden publishing low-level exploit development writeups, mitigation circumvention research, kernel internals analysis, and custom offensive tooling architectures.
+
+```text
+[+] HOST            : [https://silversec.in](https://silversec.in)
+[+] OPERATOR        : Armaan Nain (silver)
+[+] ARCHITECTURES   : x86 / x64 / Windows Internals / Linux Low-Level
+[+] TOOLING         : WinDbg, GDB-GEF, IDA Pro, Ghidra, Python, C
+[+] RESEARCH DOMAIN : Userland Heap & Fast-Bins, ROP Primitives, Kernel Pool & Drivers
