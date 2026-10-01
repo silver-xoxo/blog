@@ -1,5 +1,4 @@
 ---
-publish: true
-title: Welcome
+publish: "true"
 ---
-This is the starting of my new blog
+Pokémon hi pokemon
