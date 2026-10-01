@@ -89,7 +89,7 @@ plugins:
     options:
       hideWhenEmpty: true
 
-  - source: "@quartz-community/graph-view"
+  - source: "@quartz-community/graph"
     enabled: true
     options:
       localGraph:
