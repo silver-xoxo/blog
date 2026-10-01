@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: silver-xoxo
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -16,9 +16,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      header: JetBrains Mono
+      body: Inter
+      code: JetBrains Mono
     colors:
       lightMode:
         light: "#faf8f8"
@@ -31,15 +31,16 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#0d1117"        # GitHub/terminal dark background
+        lightgray: "#21262d"    # Borders, search box
+        gray: "#484f58"         # Graph lines, dim accents
+        darkgray: "#c9d1d9"     # Crisp readable body text
+        dark: "#58a6ff"         # Bright headings
+        secondary: "#3fb950"    # Accent green for links/titles
+        tertiary: "#2ea043"     # Hover links
+        highlight: "rgba(56, 139, 253, 0.15)"
+        textHighlight: "#58a6ff33"
+        
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
