@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Silver-xoxo
-  pageTitleSuffix: " Exploit Developer & Vulnerability Researcher "
+  pageTitle: "silver"
+  pageTitleSuffix: "| Offensive Security & Exploit Research"
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: quartz.jzhao.xyz
+  baseUrl: silver-xoxo.github.io/blog
   ignorePatterns:
     - private
     - templates
@@ -16,9 +16,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      header: JetBrains Mono
+      body: Inter
+      code: JetBrains Mono
     colors:
       lightMode:
         light: "#faf8f8"
@@ -31,15 +31,15 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+       light: "#08080a"        # Void/matte deep background
+       lightgray: "#16171d"    # Panel bases, input bars, sub-navigation
+       gray: "#2e313d"         # Structural borders, dividing rules, graph edges
+       darkgray: "#9da3b4"     # Subdued labels, file tree text, reading timers
+       dark: "#f2f4f8"         # Sharp off-white primary headers & function names
+       secondary: "#ff2a51"    # Tactical Crimson (links, active tags, branding)
+       tertiary: "#ff5271"     # Reactive highlight red (hover states, node pings)
+       highlight: "rgba(255, 42, 81, 0.14)" # Disassembly highlight tone
+       textHighlight: "#ff2a5140"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -50,96 +50,155 @@ plugins:
         - git
         - filesystem
     order: 10
+
   - source: "@quartz-community/syntax-highlighting"
     enabled: true
     options:
       theme:
         light: github-light
-        dark: github-dark
-      keepBackground: false
+        dark: one-dark-pro 
+      keepBackground: true
     order: 20
+
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
     options:
       enableInHtmlEmbed: false
       enableCheckbox: true
     order: 30
-  - source: "@quartz-community/github-flavored-markdown"
+
+  - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
-    order: 40
+    options:
+      comments: true
+      highlight: true
+      wikilinks: true
+      callouts: true
+      mermaid: true
+      parseTags: true
+      parseArrows: true
+      parseBlockReferences: true
+      enableInHtmlEmbed: true
+      enableYouTubeEmbed: true
+      enableVideoEmbed: true
+      enableCheckbox: true
+
   - source: "@quartz-community/table-of-contents"
     enabled: true
-    order: 50
+    options:
+      maxDepth: 3
+      minEntries: 2
     layout:
       position: right
       priority: 30
+
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
       markdownLinkResolution: shortest
     order: 60
+
   - source: "@quartz-community/description"
     enabled: true
     order: 70
+
   - source: "@quartz-community/latex"
     enabled: true
     options:
       renderEngine: katex
     order: 80
+
   - source: "@quartz-community/citations"
     enabled: false
     order: 85
+
   - source: "@quartz-community/hard-line-breaks"
     enabled: false
     order: 90
+
   - source: "@quartz-community/ox-hugo"
     enabled: false
     order: 91
+
   - source: "@quartz-community/roam"
     enabled: false
     order: 92
+
   - source: "@quartz-community/quartz-fonts"
     enabled: true
+
   - source: "@quartz-themes/core"
     enabled: false
     options:
       theme: tokyo-night
       mode: both
+
   - source: "@quartz-community/remove-draft"
     enabled: true
+  
   - source: "@quartz-community/explicit-publish"
     enabled: false
+  
   - source: "@quartz-community/alias-redirects"
     enabled: true
+  
   - source: "@quartz-community/content-index"
     enabled: true
     options:
       enableSiteMap: true
       enableRSS: true
+  
   - source: "@quartz-community/favicon"
     enabled: true
+  
   - source: "@quartz-community/og-image"
     enabled: true
+  
   - source: "@quartz-community/cname"
     enabled: true
+  
   - source: "@quartz-community/canvas-page"
     enabled: true
+  
   - source: "@quartz-community/content-page"
     enabled: true
+  
   - source: "@quartz-community/folder-page"
     enabled: true
+  
   - source: "@quartz-community/tag-page"
     enabled: true
+  
   - source: "@quartz-community/explorer"
     enabled: true
     layout:
       position: left
       priority: 50
+  
   - source: "@quartz-community/graph"
     enabled: true
-    layout:
-      position: right
-      priority: 10
+    options:
+      localGraph:
+        drag: true
+        zoom: true
+        depth: 2
+        scale: 1.15
+        repelForce: 0.65
+        centerForce: 0.25
+        linkDistance: 42
+        fontSize: 0.45
+        opacityScale: 1
+      globalGraph:
+        drag: true
+        zoom: true
+        depth: -1
+        scale: 0.95
+        repelForce: 0.55
+        centerForce: 0.2
+        linkDistance: 48
+        fontSize: 0.35
+        opacityScale: 0.85
+  
   - source: "@quartz-community/search"
     enabled: true
     layout:
@@ -148,11 +207,12 @@ plugins:
       group: toolbar
       groupOptions:
         grow: true
+  
   - source: "@quartz-community/backlinks"
     enabled: true
-    layout:
-      position: right
-      priority: 50
+    options:
+      hideWhenEmpty: true
+  
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
