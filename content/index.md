@@ -1,12 +1,12 @@
 ---
 publish: true
-title: Hi Hacker,
+title: Master Index
 created: 2026-10-02T05:15:25.935Z
-modified: 2026-10-03T03:47:58.511Z
+modified: 2026-10-03T06:06:07.821Z
 ---
 
 > [!info] Welcome
-> Welcome to **silversec.in**. This is my digital garden where I document my cybersecurity research, methodologies, and ideas.
+> Hi Hacker, Welcome to **silversec.in**. This is my digital garden where I document my cybersecurity research, methodologies, and ideas.
 
 ### Master Index
 
