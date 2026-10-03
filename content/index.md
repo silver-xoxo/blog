@@ -1,33 +1,22 @@
 ---
 publish: true
-title: Hi ! Intruder
+title: Hi Hacker,
 created: 2026-10-02T05:15:25.935Z
-modified: 2026-10-02T05:20:32.972Z
+modified: 2026-10-03T03:07:21.600Z
 ---
 
 > [!info] Welcome
-> Welcome to **silversec.in**. This is my digital garden where I document my cybersecurity research, box-solving methodologies, and custom tooling.
+> Welcome to **silversec.in**. This is my digital garden where I document my cybersecurity research, methodologies, and ideas.
 
-### 🗺️ Navigate the Vault
+### Master Index
 
-**[[Active Directory & Privilege Escalation]]**
-Deep dives into AD mechanics, Kerberos authentication flows, token impersonation, and Windows service permissions.
-
-**[[Exploit Development & Reverse Engineering]]**
-Notes on low-level memory analysis, binary exploitation, custom shellcode, and Windows kernel security, encompassing methodologies for advanced certifications like OSED and OSEE.
-
-**[[Offensive AI]]**
-Research covering AI red teaming, prompt security, and adversarial machine learning concepts.
-
-**[[Automation & Tooling]]**
-Custom Python scripts for penetration testing, including automated enumeration workflows (Nmap/Searchsploit) and multi-protocol file hosting (HTTP, FTP, SMB, WebDAV).
-
-**[[Box Walkthroughs]]**
-Detailed write-ups and methodologies for machines from Proving Grounds Play and TJ Null's curated lists.
+**[[0x01 - Index | 0x01 - Wi-Fi Pentesting Index]]**
+**[[0x02 - Index | 0x02 - AI Red Teaming]]**
 
 ---
 
-### 🤝 Community & Content
-
-- **YouTube:** I regularly post technical concepts and stream live box-solving walkthroughs in Hindi.
-- **Discord:** Join the **silver privilege** server to participate in community box-solving competitions and connect with other researchers.
+> [!Quote] About Me
+>
+> Hi, I am Armaan Nain. I popularly go by the nickname "Silver". I have been documenting my things here from 3rd October 2026. If you wanna talk to me sometime after reading.
+>
+> Reach out to me on Discord ( sil3r\_xoxo ) or [Linkedin](www.linkedin.com/in/armaan-nain)
