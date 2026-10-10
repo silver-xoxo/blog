@@ -1,37 +1,25 @@
 ---
 publish: true
-title: Hi ! Intruder
-created: 2026-10-01T14:45:27.152Z
-modified: 2026-10-02T04:19:03.773Z
-tags:
-  - "#index"
-  - cybersecurity
-  - digital-garden
+title: Master Index
+created: 2026-10-02T05:15:25.935Z
+modified: 2026-10-03T06:06:07.821Z
 ---
 
 > [!info] Welcome
-> Welcome to **silversec.in**. This is my digital garden where I document my cybersecurity research, box-solving methodologies, and custom tooling.
+> Hi Hacker, Welcome to **silversec.in**. This is my digital garden where I document my cybersecurity research, methodologies, and ideas.
 
-### 🗺️ Navigate the Vault
+### Master Index
 
-**[[Active Directory & Privilege Escalation]]**
-Deep dives into AD mechanics, Kerberos authentication flows, token impersonation, and Windows service permissions.
-
-**[[Exploit Development & Reverse Engineering]]**
-Notes on low-level memory analysis, binary exploitation, custom shellcode, and Windows kernel security, encompassing methodologies for advanced certifications like OSED and OSEE.
-
-**[[Offensive AI]]**
-Research covering AI red teaming, prompt security, and adversarial machine learning concepts.
-
-**[[Automation & Tooling]]**
-Custom Python scripts for penetration testing, including automated enumeration workflows (Nmap/Searchsploit) and multi-protocol file hosting (HTTP, FTP, SMB, WebDAV).
-
-**[[Box Walkthroughs]]**
-Detailed write-ups and methodologies for machines from Proving Grounds Play and TJ Null's curated lists.
+- **[[0x01 - Index | 0x01 - Wi-Fi Pentesting]]**
+- **[[0x02 - Index | 0x02 - AI Red Teaming]]**
+- **[[ 0x03 - Index | 0x03 - Pentesting ]]**
+- **[[ 0x04 - Index | 0x04 - Web Pentesting ]]**
+- **[[ 0x05 - Index | 0x05 - Exploit Development & Research]]**
 
 ---
 
-### 🤝 Community & Content
-
-- **YouTube:** I regularly post technical concepts and stream live box-solving walkthroughs in Hindi.
-- **Discord:** Join the **silver privilege** server to participate in community box-solving competitions and connect with other researchers.
+> [!Quote] About Me
+>
+> Hi, I am Armaan Nain. I popularly go by the nickname "Silver". I have been documenting my things here from 3rd October 2026. If you wanna talk to me sometime after reading.
+>
+> Reach out to me on Discord ( sil3r\_xoxo ) or [Linkedin](https://www.linkedin.com/in/armaan-nain)
