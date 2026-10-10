@@ -21,15 +21,15 @@ configuration:
       code: JetBrains Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#faf9f6"                      # Off-white/pearl background, easier on the eyes
+        lightgray: "#e0e3e7"                  # Subtle borders
+        gray: "#94a3b8"                       # Muted text for graph nodes and metadata
+        darkgray: "#334155"                   # High contrast dark slate for body text
+        dark: "#0f172a"                       # Deep slate/near-black for headings
+        secondary: "#2563eb"                  # Crisp blue for links and accents
+        tertiary: "#93c5fd"                   # Lighter blue for hover states
+        highlight: "rgba(37, 99, 235, 0.1)"   # Soft blue background highlight
+        textHighlight: "#fef08a88"            # Soft yellow for highlighted text
       darkMode:
        light: "#08080a"        # Void/matte deep background
        lightgray: "#16171d"    # Panel bases, input bars, sub-navigation
@@ -263,11 +263,23 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        "Buy me a Coffee" : "https://buymeacoffee.com/silver.xoxo"
+        "Join the Discord" : "https://discord.gg/Mbg6T4DFzt"
     layout:
       position: footer
       priority: 50
+
+  - source: "@quartz-community/footer"
+    enabled: true
+    options:
+      links:
+        "Buy me a Coffee": "https://buymeacoffee.com/silver.xoxo"
+        "Join the Discord": "https://discord.gg/Mbg6T4DFzt"
+        "LinkedIn": "https://linkedin.com/in/armaan-nain"
+    layout:
+      position: right
+      priority: 100 # High priority number pushes it to the very bottom, under the graph
+
   - source: "@quartz-community/recent-notes"
     enabled: false
   - source: "@quartz-community/spacer"
