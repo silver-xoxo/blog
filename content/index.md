@@ -2,13 +2,13 @@
 publish: true
 title: Master Index
 created: 2026-10-02T05:15:25.935Z
-modified: 2026-10-03T06:06:07.821Z
+modified: 2026-10-09T08:20:12.442Z
 ---
 
 > [!info] Welcome
 > Hi Hacker, Welcome to **silversec.in**. This is my digital garden where I document my cybersecurity research, methodologies, and ideas.
 
-### Master Index
+---
 
 - **[[0x01 - Index | 0x01 - Wi-Fi Pentesting]]**
 - **[[0x02 - Index | 0x02 - AI Red Teaming]]**
@@ -20,6 +20,6 @@ modified: 2026-10-03T06:06:07.821Z
 
 > [!Quote] About Me
 >
-> Hi, I am Armaan Nain. I popularly go by the nickname "Silver". I have been documenting my things here from 3rd October 2026. If you wanna talk to me sometime after reading.
->
-> Reach out to me on Discord ( sil3r\_xoxo ) or [Linkedin](https://www.linkedin.com/in/armaan-nain)
+> Hi, I am Armaan Nain. I popularly go by the nickname "Silver". I have been documenting my things here from 3rd October 2026. If you wanna talk to me sometime after reading. Reach out to me on Discord ( silv3r\_xoxo ) or [Linkedin](https://www.linkedin.com/in/armaan-nain)
+
+---
