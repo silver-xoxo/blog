@@ -1,8 +1,10 @@
 ---
 publish: true
 title: Master Index
-created: 2026-10-02T05:15:25.935Z
-modified: 2026-10-09T08:20:12.442Z
+created: 2026-10-10T11:23:56.335Z
+modified: 2026-10-16T15:10:01.523Z
+---
+
 ---
 
 > [!info] Welcome
@@ -10,11 +12,9 @@ modified: 2026-10-09T08:20:12.442Z
 
 ---
 
-- **[[0x01 - Index | 0x01 - Wi-Fi Pentesting]]**
-- **[[0x02 - Index | 0x02 - AI Red Teaming]]**
-- **[[ 0x03 - Index | 0x03 - Pentesting ]]**
-- **[[ 0x04 - Index | 0x04 - Web Pentesting ]]**
-- **[[ 0x05 - Index | 0x05 - Exploit Development & Research]]**
+- **[[0x01 - Index | 0x01 - Pentesting]]**
+- **[[0x02 - Index | 0x02 - Wi-Fi Pentesting]]**
+- **[[0x03 - Index | 0x03 - AI Pentesting]]**
 
 ---
 
