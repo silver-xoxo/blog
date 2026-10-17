@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"30be7d66cba9d9cb","type":"text","text":"# 1800","x":60,"y":-180,"width":250,"height":60},
+		{"id":"1e1ab1a4a9ff4368","type":"text","text":"# 1854","x":60,"y":36,"width":250,"height":60},
+		{"id":"3e19636a947e8176","type":"text","text":"# 1900","x":60,"y":236,"width":250,"height":60},
+		{"id":"8bf1535a5641d324","type":"text","text":"Boolean ALgebra","x":460,"y":36,"width":250,"height":60},
+		{"id":"91079e299d752f3b","x":833,"y":-30,"width":360,"height":193,"type":"text","text":"George Boole Proved that human logic can be reduced to algebra using only two values : \n- True [1]\n- False [0]"}
+	],
+	"edges":[
+		{"id":"2f10b98d501bdab3","fromNode":"30be7d66cba9d9cb","fromSide":"bottom","toNode":"1e1ab1a4a9ff4368","toSide":"top","color":"3"},
+		{"id":"40541427bc0b2407","fromNode":"1e1ab1a4a9ff4368","fromSide":"bottom","toNode":"3e19636a947e8176","toSide":"top","color":"3"},
+		{"id":"67204a1f633e764a","fromNode":"1e1ab1a4a9ff4368","fromSide":"right","toNode":"8bf1535a5641d324","toSide":"left"},
+		{"id":"b8d565d69e4313ab","fromNode":"8bf1535a5641d324","fromSide":"right","toNode":"91079e299d752f3b","toSide":"left"}
+	]
+}
