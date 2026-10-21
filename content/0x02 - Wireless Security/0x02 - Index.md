@@ -2,7 +2,7 @@
 publish: true
 title: 0x02 - Index
 created: 2026-10-10T11:23:56.328Z
-modified: 2026-10-21T11:41:27.101Z
+modified: 2026-10-21T13:16:52.948Z
 ---
 
 ---
@@ -13,4 +13,7 @@ modified: 2026-10-21T11:41:27.101Z
    2. [[iwconfig utility]]
    3. [[rfkill utility]]
 3. [[Wireless Stacks]]
-4.
+4. Network Interaction
+   1. [[Frames]]
+   2. [[Packets]]
+   3.
