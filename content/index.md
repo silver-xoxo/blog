@@ -2,7 +2,7 @@
 publish: true
 title: Master Index
 created: 2026-10-10T11:23:56.335Z
-modified: 2026-10-17T05:01:18.756Z
+modified: 2026-10-22T05:14:19.144Z
 ---
 
 ---
@@ -15,7 +15,8 @@ modified: 2026-10-17T05:01:18.756Z
 - **[[0x00 - Index | 0x00 - Research Work]]**
 - **[[0x01 - Index | 0x01 - Pentesting]]**
 - **[[0x02 - Index | 0x02 - Wi-Fi Pentesting]]**
-- **[[0x03 - Index | 0x03 - AI Pentesting]]**
+
+https://referral.hackthebox.com/mzX9PGu
 
 ---
 
