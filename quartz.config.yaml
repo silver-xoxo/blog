@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "silver-xoxo 󠀠󠀠 󠀠 󠀠| Armaan Nain"
-  pageTitleSuffix: " | Exploit Development & Vulnerability Research "
+  pageTitle: "silver-xoxo"
+  pageTitleSuffix: " | Armaan Nain's Blog "
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -224,7 +224,7 @@ plugins:
       position: beforeBody
       priority: 20
   - source: "@quartz-community/tag-list"
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
       priority: 30
@@ -296,7 +296,7 @@ plugins:
         - tags
         - aliases
       excludedProperties: []
-      hidePropertiesView: false
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5
