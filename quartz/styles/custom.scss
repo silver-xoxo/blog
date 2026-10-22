@@ -564,3 +564,93 @@ ul.tags {
     }
   }
 }
+
+/* --- Transform Folder Pages into Sleek Cyber Cards --- */
+ul.section-ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin-top: 1.5rem !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+  gap: 0.85rem !important;
+
+  li.section-li {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    /* Turn each row into a dark-glass card */
+    > .section {
+      display: flex !important;
+      flex-direction: column-reverse !important; /* Put Title on top, Date underneath */
+      align-items: flex-start !important;
+      justify-content: center !important;
+      gap: 0.35rem !important;
+      padding: 1rem 1.2rem !important;
+      background: rgba(20, 22, 30, 0.75) !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      border-left: 3px solid #f43f5e !important;
+      border-radius: 10px !important;
+      transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+
+      &:hover {
+        transform: translateY(-3px) !important;
+        background: rgba(244, 63, 94, 0.08) !important;
+        border-color: rgba(244, 63, 94, 0.5) !important;
+        box-shadow: 0 8px 24px rgba(244, 63, 94, 0.15) !important;
+      }
+
+      /* Date styling (if present) */
+      > .meta {
+        margin: 0 !important;
+        font-size: 0.78rem !important;
+        color: #64748b !important;
+        font-family: var(--codeFont);
+        opacity: 0.85;
+      }
+
+      /* Title & Link styling (Remove the ugly cramped red highlight box) */
+      > .desc {
+        width: 100%;
+
+        h3 {
+          margin: 0 !important;
+          font-size: 1.02rem !important;
+          line-height: 1.4 !important;
+
+          a.internal {
+            background: transparent !important;
+            background-color: transparent !important;
+            padding: 0 !important;
+            color: #f1f5f9 !important;
+            font-weight: 600 !important;
+            text-decoration: none !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 0.5rem !important;
+
+            &::before {
+              content: "▹";
+              color: #f43f5e;
+              font-weight: bold;
+              transition: transform 0.2s ease;
+            }
+          }
+        }
+      }
+
+      &:hover > .desc h3 a.internal {
+        color: #fb7185 !important;
+
+        &::before {
+          transform: translateX(4px);
+        }
+      }
+
+      /* Hide empty tag containers inside folder cards if unused */
+      > ul.tags:empty {
+        display: none !important;
+      }
+    }
+  }
+}
