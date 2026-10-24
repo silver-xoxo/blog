@@ -1,8 +1,11 @@
 ---
 publish: true
 title: iw utility
-created: 2026-10-21T07:23:13.915Z
-modified: 2026-10-21T08:39:33.811Z
+created: 2026-10-24T04:29:19.821Z
+modified: 2026-10-24T04:44:50.411Z
+tags:
+  - "#linux"
+  - "#AD"
 ---
 
 ---

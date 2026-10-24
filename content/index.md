@@ -1,8 +1,8 @@
 ---
 publish: true
 title: Master Index
-created: 2026-10-10T11:23:56.335Z
-modified: 2026-10-22T05:14:19.144Z
+created: 2026-10-22T10:46:07.924Z
+modified: 2026-10-22T10:57:46.535Z
 ---
 
 ---
@@ -23,5 +23,3 @@ https://referral.hackthebox.com/mzX9PGu
 > [!Quote] About Me
 >
 > Hi, I am Armaan Nain. I popularly go by the nickname "Silver". I have been documenting my things here from 3rd October 2026. If you wanna talk to me sometime after reading. Reach out to me on Discord ( silv3r\_xoxo ) or [Linkedin](https://www.linkedin.com/in/armaan-nain)
-
----

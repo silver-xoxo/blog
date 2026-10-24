@@ -50,7 +50,8 @@
 		{"id":"b07502d924803132","type":"text","text":"# 1953","x":60,"y":2131,"width":250,"height":60,"color":"3"},
 		{"id":"3863c28b5ab1f84f","type":"file","file":"Images/Magnetic Core memory.png","x":-1020,"y":2004,"width":400,"height":315},
 		{"id":"d1def645da9b464e","type":"text","text":"(Fun fact: When a program crashes on Linux today and generates a **\"core dump\"**, that name is a direct fossil from dumping the state of those iron magnetic cores!)","x":-1760,"y":2099,"width":500,"height":125},
-		{"id":"10d2c0f479ca4b8b","type":"text","text":"# 1955 \n-> came in effect","x":-960,"y":2460,"width":281,"height":116}
+		{"id":"10d2c0f479ca4b8b","type":"text","text":"# 1955 \n-> came in effect","x":-960,"y":2460,"width":281,"height":116},
+		{"id":"8166a65c46064f48","type":"text","text":"[0x02 - Index](https://google.com)","x":69,"y":-799,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"2f10b98d501bdab3","fromNode":"30be7d66cba9d9cb","fromSide":"bottom","toNode":"1e1ab1a4a9ff4368","toSide":"top","color":"3"},
