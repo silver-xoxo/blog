@@ -147,7 +147,9 @@ plugins:
     options:
       enableSiteMap: true
       enableRSS: true
-  
+      rssLimit: 20
+      rssFullHtml: true
+
   - source: "@quartz-community/favicon"
     enabled: true
   
