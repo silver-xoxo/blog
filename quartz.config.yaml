@@ -156,6 +156,10 @@ plugins:
   
   - source: "@quartz-community/og-image"
     enabled: true
+    options:
+      colorScheme: darkmode
+      width: 1200
+      height: 630
   
   - source: "@quartz-community/cname"
     enabled: true
