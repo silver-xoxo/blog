@@ -149,6 +149,7 @@ plugins:
       enableRSS: true
       rssLimit: 50
       rssFullHtml: false
+      includeEmptyFiles: false
 
   - source: "@quartz-community/favicon"
     enabled: true
