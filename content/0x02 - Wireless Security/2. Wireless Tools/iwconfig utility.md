@@ -2,8 +2,8 @@
 publish: true
 title: iwconfig utility
 description: These notes are about a utility named iwconfig
-created: 2026-10-24T04:29:19.822Z
-modified: 2026-10-24T04:45:26.793Z
+created: 2026-10-24T10:32:00
+modified: 2026-10-24T05:02:24.529Z
 tags:
   - "#pokemon"
   - "#sunlight"
