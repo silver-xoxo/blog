@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: "silver-xoxo"
-  pageTitleSuffix: " | Armaan Nain's Blog "
+  pageTitleSuffix: " | silversec.in "
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -33,8 +33,8 @@ configuration:
       darkMode:
        light: "#08080a"        # Void/matte deep background
        lightgray: "#16171d"    # Panel bases, input bars, sub-navigation
-       gray: "#2e313d"         # Structural borders, dividing rules, graph edges
-       darkgray: "#9da3b4"     # Subdued labels, file tree text, reading timers
+       gray: "#94a3b8"         # Structural borders, dividing rules, graph edges
+       darkgray: "#cbd5e1"     # Subdued labels, file tree text, reading timers
        dark: "#f2f4f8"         # Sharp off-white primary headers & function names
        secondary: "#ff2a51"    # Tactical Crimson (links, active tags, branding)
        tertiary: "#ff5271"     # Reactive highlight red (hover states, node pings)
