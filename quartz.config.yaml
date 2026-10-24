@@ -157,7 +157,7 @@ plugins:
   - source: "@quartz-community/og-image"
     enabled: true
     options:
-      colorScheme: darkmode
+      colorScheme: darkMode
       width: 1200
       height: 630
   
