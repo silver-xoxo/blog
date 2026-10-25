@@ -21,25 +21,25 @@ configuration:
       code: JetBrains Mono
     colors:
       lightMode:
-        light: "#faf9fb"                      # Soft pearl-violet background
-        lightgray: "#e2e0eb"                  # Subtle borders
-        gray: "#94a3b8"                       # Muted text for graph nodes and metadata
-        darkgray: "#334155"                   # High contrast dark slate for body text
-        dark: "#0f172a"                       # Deep slate/near-black for headings
-        secondary: "#7c3aed"                  # Royal violet for links and accents
-        tertiary: "#a855f7"                   # Lighter purple for hover states
-        highlight: "rgba(124, 58, 237, 0.1)"  # Soft purple background highlight
-        textHighlight: "#d8b4fe88"            # Soft lavender for highlighted text
+        light: "#f6f2e9"                      # Warm Soft Paper background
+        lightgray: "#e4decb"                  # Subtle warm paper borders & code blocks
+        gray: "#7c7567"                       # Warm muted ink for metadata & graph edges
+        darkgray: "#2c2a26"                   # Crisp warm charcoal ink for body text
+        dark: "#141311"                       # Deep espresso ink for headings
+        secondary: "#0969da"                  # GitHub Blueprint Blue for links & accents
+        tertiary: "#218bff"                   # Hover blue
+        highlight: "rgba(9, 105, 218, 0.08)"  # Soft blue highlight
+        textHighlight: "#fae17d88"            # Warm highlighter yellow
       darkMode:
-        light: "#08080c"                      # Deep obsidian void background
-        lightgray: "#151520"                  # Panel bases, input bars, sub-navigation
-        gray: "#94a3b8"                       # Structural borders, dividing rules, graph edges
-        darkgray: "#cbd5e1"                   # Subdued labels, file tree text, reading timers
-        dark: "#f8fafc"                       # Sharp off-white primary headers & function names
-        secondary: "#a855f7"                  # Cyber Purple (links, active tags, branding)
-        tertiary: "#c084fc"                   # Reactive Lavender (hover states, node pings)
-        highlight: "rgba(168, 85, 247, 0.14)" # Purple glass highlight tone
-        textHighlight: "#a855f740"
+        light: "#0d1117"                      # GitHub Dark main canvas
+        lightgray: "#161b22"                  # GitHub Dark elevated surface & panels
+        gray: "#8b949e"                       # GitHub Dark muted text & structural rules
+        darkgray: "#c9d1d9"                   # GitHub Dark primary body text
+        dark: "#e6edf3"                       # GitHub Dark crisp heading white
+        secondary: "#58a6ff"                  # GitHub Dark signature blue accent
+        tertiary: "#79c0ff"                   # GitHub Dark hover blue
+        highlight: "rgba(56, 139, 253, 0.12)" # GitHub Dark subtle blue highlight
+        textHighlight: "#bb800940"
 
 plugins:
   - source: "@quartz-community/created-modified-date"
@@ -57,7 +57,7 @@ plugins:
     options:
       theme:
         light: github-light
-        dark: one-dark-pro
+        dark: github-dark
       keepBackground: true
     order: 20
 
