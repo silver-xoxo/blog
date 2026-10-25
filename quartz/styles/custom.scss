@@ -351,74 +351,85 @@ footer ul li a:hover {
   background-color: var(--light);
 }
 
-/* --- Mobile Polish & Cyber/Tech Styling --- */
-@media all and ($mobile) {
-  /* 1. Sticky Frosted-Glass Top Navigation Bar */
+/* =========================================================
+   FIXED MOBILE NAVIGATION & DRAWER POPUP
+   ========================================================= */
+@media all and (max-width: 800px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  /* 1. Ensure the left sidebar acts as a clean top bar */
   .sidebar.left {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: rgba(18, 18, 22, 0.85) !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 0.6rem 1rem !important;
-    margin-bottom: 1rem;
-  }
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.5rem !important;
+    padding: 0.65rem 1rem !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background: #0c0d12 !important; /* Solid dark background so content doesn't bleed through */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 
-  /* 2. Comfortable Reading Margins & Typography */
-  .page > #quartz-body {
-    padding: 0 1rem;
-  }
+    .page-title {
+      font-size: 1.1rem !important;
+      margin: 0 !important;
+    }
 
-  article {
-    font-size: 0.95rem;
-    line-height: 1.65;
-  }
-
-  /* 3. Smooth Horizontal Scroll Cards for Wide Tables */
-  .table-container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 1.2rem 0;
-
-    table {
-      width: 100%;
-      min-width: 480px; /* Keeps columns readable instead of squishing words */
-      margin: 0;
+    .search {
+      flex: 1 1 130px !important;
+      max-width: 180px !important;
     }
   }
 
-  /* 4. Sleek Code Blocks with glowing left accent */
-  pre {
-    border-radius: 10px;
-    padding: 0.85rem !important;
-    font-size: 0.85rem;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  /* 2. Fix the mobile dropdown drawer when clicking the hamburger icon (☰) */
+  .sidebar.left .mobile-explorer, 
+  .sidebar.left .explorer,
+  .sidebar.left .overflow {
+    max-height: 75vh !important;
+    overflow-y: auto !important;
+    background: #11131a !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   }
 
-  /* 5. Full-Width Touch-Friendly Bottom Action Buttons */
-  footer, .after-body {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
+  /* 3. Stack Folder & File Cards in a clean 1-column list on phone */
+  ul.section-ul {
+    grid-template-columns: 1fr !important;
+    gap: 0.65rem !important;
+  }
 
-    a {
-      justify-content: center;
-      width: 100%;
-      padding: 0.75rem 1rem;
-      border-radius: 10px;
-      font-weight: 600;
-      transition: transform 0.15s ease, background 0.2s ease;
+  /* 4. Fix Bottom Social Buttons on Phone */
+  footer,
+  .after-body,
+  .custom-buttons,
+  .social-links {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    gap: 0.65rem !important;
+    width: 100% !important;
+    padding: 1rem 0 !important;
+    margin-top: 1.5rem !important;
+    box-sizing: border-box !important;
+  }
 
-      &:active {
-        transform: scale(0.97);
-      }
-    }
+  html body a[href*="buymeacoffee"]:not(article p a):not(.callout a),
+  html body a[href*="discord"]:not(article p a):not(.callout a),
+  html body a[href*="linkedin"]:not(article p a):not(.callout a) {
+    position: static !important;
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0.8rem 1rem !important;
+    transform: none !important;
   }
 }
 
