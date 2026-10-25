@@ -359,20 +359,19 @@ footer ul li a:hover {
     overflow-x: hidden !important;
   }
 
-  /* 1. Ensure the left sidebar acts as a clean top bar */
+  /* 1. Lock the top navigation bar firmly in place */
   .sidebar.left {
+    position: relative !important;
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
     align-items: center !important;
     justify-content: space-between !important;
     gap: 0.5rem !important;
-    padding: 0.65rem 1rem !important;
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 1000 !important;
-    background: #0c0d12 !important; /* Solid dark background so content doesn't bleed through */
+    padding: 0.75rem 1rem !important;
+    background: #0c0d12 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    z-index: 9999 !important;
 
     .page-title {
       font-size: 1.1rem !important;
@@ -381,28 +380,42 @@ footer ul li a:hover {
 
     .search {
       flex: 1 1 130px !important;
-      max-width: 180px !important;
+      max-width: 170px !important;
+    }
+
+    /* 2. Force the mobile explorer menu to act as a clean absolute dropdown overlay */
+    .mobile-explorer, 
+    .explorer,
+    .explorer-content {
+      position: absolute !important;
+      top: 100% !important;
+      left: 0 !important;
+      width: 100% !important;
+      max-height: 75vh !important;
+      overflow-y: auto !important;
+      background: #11131a !important;
+      border-bottom: 1px solid rgba(244, 63, 94, 0.3) !important;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.85) !important;
+      padding: 1rem !important;
+      box-sizing: border-box !important;
+      z-index: 10000 !important;
     }
   }
 
-  /* 2. Fix the mobile dropdown drawer when clicking the hamburger icon (☰) */
-  .sidebar.left .mobile-explorer, 
-  .sidebar.left .explorer,
-  .sidebar.left .overflow {
-    max-height: 75vh !important;
-    overflow-y: auto !important;
-    background: #11131a !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  /* 3. Keep page content completely stationary and clean */
+  .page, #quartz-body {
+    position: relative !important;
+    z-index: 1 !important;
+    transform: none !important;
   }
 
-  /* 3. Stack Folder & File Cards in a clean 1-column list on phone */
+  /* 4. Folder Cards 1-column layout on phone */
   ul.section-ul {
     grid-template-columns: 1fr !important;
     gap: 0.65rem !important;
   }
 
-  /* 4. Fix Bottom Social Buttons on Phone */
+  /* 5. Clean Stacked Mobile Social Buttons */
   footer,
   .after-body,
   .custom-buttons,
@@ -432,18 +445,6 @@ footer ul li a:hover {
     transform: none !important;
   }
 }
-
-/* 5. Push page content down smoothly when mobile menu/explorer is open */
-  .page, #quartz-body {
-    transition: transform 0.25s ease;
-  }
-
-  /* When mobile explorer drawer is active, push page content down */
-  body:has(.sidebar.left.active) .page,
-  body:has(.sidebar.left.open) .page,
-  body:has(#explorer-content.open) .page {
-    transform: translateY(220px); /* Adjusts height dynamically based on explorer content length */
-  }
 
 /* --- Clean Dark-Glass Footer & Action Buttons --- */
 html body footer a[href*="buymeacoffee"],
@@ -828,5 +829,43 @@ ul.section-ul li.section-li > .section:has(> .meta:not(:empty)) {
     margin: 0 !important;
     padding: 0.8rem 1rem !important;
     transform: none !important;
+  }
+}
+
+/* =========================================================
+   FIX DESKTOP EXPLORER COLLAPSE GLITCH
+   ========================================================= */
+.sidebar.left {
+  /* Ensure the left sidebar keeps a stable layout when explorer collapses */
+  display: flex;
+  flex-direction: column;
+
+  .explorer {
+    /* Keep the explorer container visible even when folder content is closed */
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: auto !important;
+  }
+
+  /* Target the actual collapsible content tree when closed */
+  .explorer-content, 
+  #explorer-content,
+  .folder-container {
+    transition: max-height 0.2s ease, opacity 0.2s ease;
+    
+    &.collapsed {
+      display: none !important; /* Safely hide only the folder lists */
+    }
+  }
+
+  /* Make sure the header "Explorer" title and arrow remain visible */
+  button.explorer-title, 
+  .explorer-title {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 }
