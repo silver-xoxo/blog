@@ -433,6 +433,18 @@ footer ul li a:hover {
   }
 }
 
+/* 5. Push page content down smoothly when mobile menu/explorer is open */
+  .page, #quartz-body {
+    transition: transform 0.25s ease;
+  }
+
+  /* When mobile explorer drawer is active, push page content down */
+  body:has(.sidebar.left.active) .page,
+  body:has(.sidebar.left.open) .page,
+  body:has(#explorer-content.open) .page {
+    transform: translateY(220px); /* Adjusts height dynamically based on explorer content length */
+  }
+
 /* --- Clean Dark-Glass Footer & Action Buttons --- */
 html body footer a[href*="buymeacoffee"],
 html body footer a[href*="discord"],
