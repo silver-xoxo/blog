@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "silver-xoxo"
+  pageTitle: silver-xoxo
   pageTitleSuffix: " | silversec.in"
   enableSPA: true
   enablePopovers: true
@@ -21,26 +21,25 @@ configuration:
       code: JetBrains Mono
     colors:
       lightMode:
-        light: "#f6f2e9"                      # Warm Soft Paper background
-        lightgray: "#e4decb"                  # Subtle warm paper borders & code blocks
-        gray: "#7c7567"                       # Warm muted ink for metadata & graph edges
-        darkgray: "#2c2a26"                   # Crisp warm charcoal ink for body text
-        dark: "#141311"                       # Deep espresso ink for headings
-        secondary: "#0969da"                  # GitHub Blueprint Blue for links & accents
-        tertiary: "#218bff"                   # Hover blue
-        highlight: "rgba(9, 105, 218, 0.08)"  # Soft blue highlight
-        textHighlight: "#fae17d88"            # Warm highlighter yellow
+        light: "#f6f2e9"
+        lightgray: "#e4decb"
+        gray: "#7c7567"
+        darkgray: "#2c2a26"
+        dark: "#141311"
+        secondary: "#0969da"
+        tertiary: "#218bff"
+        highlight: rgba(9, 105, 218, 0.08)
+        textHighlight: "#fae17d88"
       darkMode:
-        light: "#0d1117"                      # GitHub Dark main canvas
-        lightgray: "#161b22"                  # GitHub Dark elevated surface & panels
-        gray: "#8b949e"                       # GitHub Dark muted text & structural rules
-        darkgray: "#c9d1d9"                   # GitHub Dark primary body text
-        dark: "#e6edf3"                       # GitHub Dark crisp heading white
-        secondary: "#58a6ff"                  # GitHub Dark signature blue accent
-        tertiary: "#79c0ff"                   # GitHub Dark hover blue
-        highlight: "rgba(56, 139, 253, 0.12)" # GitHub Dark subtle blue highlight
+        light: "#0d1117"
+        lightgray: "#161b22"
+        gray: "#8b949e"
+        darkgray: "#c9d1d9"
+        dark: "#e6edf3"
+        secondary: "#58a6ff"
+        tertiary: "#79c0ff"
+        highlight: rgba(56, 139, 253, 0.12)
         textHighlight: "#bb800940"
-
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -51,7 +50,6 @@ plugins:
         - git
         - filesystem
     order: 10
-
   - source: "@quartz-community/syntax-highlighting"
     enabled: true
     options:
@@ -60,7 +58,6 @@ plugins:
         dark: github-dark
       keepBackground: true
     order: 20
-
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
     options:
@@ -77,7 +74,6 @@ plugins:
       enableVideoEmbed: true
       enableCheckbox: true
     order: 30
-
   - source: "@quartz-community/table-of-contents"
     enabled: true
     options:
@@ -86,57 +82,44 @@ plugins:
     layout:
       position: right
       priority: 30
-
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
       markdownLinkResolution: shortest
     order: 60
-
   - source: "@quartz-community/description"
     enabled: true
     order: 70
-
   - source: "@quartz-community/latex"
     enabled: true
     options:
       renderEngine: katex
     order: 80
-
   - source: "@quartz-community/citations"
     enabled: false
     order: 85
-
   - source: "@quartz-community/hard-line-breaks"
     enabled: false
     order: 90
-
   - source: "@quartz-community/ox-hugo"
     enabled: false
     order: 91
-
   - source: "@quartz-community/roam"
     enabled: false
     order: 92
-
   - source: "@quartz-community/quartz-fonts"
     enabled: true
-
   - source: "@quartz-themes/core"
     enabled: false
     options:
       theme: tokyo-night
       mode: both
-
   - source: "@quartz-community/remove-draft"
     enabled: true
-
   - source: "@quartz-community/explicit-publish"
     enabled: false
-
   - source: "@quartz-community/alias-redirects"
     enabled: true
-
   - source: "@quartz-community/content-index"
     enabled: true
     options:
@@ -145,38 +128,29 @@ plugins:
       rssLimit: 50
       rssFullHtml: false
       includeEmptyFiles: false
-
   - source: "@quartz-community/favicon"
     enabled: true
-
   - source: "@quartz-community/og-image"
     enabled: false
     options:
       colorScheme: darkMode
       width: 1200
       height: 630
-
   - source: "@quartz-community/cname"
     enabled: true
-
   - source: "@quartz-community/canvas-page"
     enabled: true
-
   - source: "@quartz-community/content-page"
     enabled: true
-
   - source: "@quartz-community/folder-page"
     enabled: true
-
   - source: "@quartz-community/tag-page"
     enabled: true
-
   - source: "@quartz-community/explorer"
     enabled: true
     layout:
       position: left
       priority: 50
-
   - source: "@quartz-community/graph"
     enabled: true
     options:
@@ -200,7 +174,6 @@ plugins:
         linkDistance: 48
         fontSize: 0.35
         opacityScale: 0.85
-
   - source: "@quartz-community/search"
     enabled: true
     layout:
@@ -209,57 +182,48 @@ plugins:
       group: toolbar
       groupOptions:
         grow: true
-
   - source: "@quartz-community/backlinks"
     enabled: true
     options:
       hideWhenEmpty: true
-
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
       position: beforeBody
       priority: 10
-
   - source: "@quartz-community/content-meta"
     enabled: true
     layout:
       position: beforeBody
       priority: 20
-
   - source: "@quartz-community/tag-list"
     enabled: true
     layout:
       position: beforeBody
       priority: 30
-
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
       position: left
       priority: 10
-
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
       position: left
       priority: 30
       group: toolbar
-
   - source: "@quartz-community/reader-mode"
     enabled: true
     layout:
       position: left
       priority: 35
       group: toolbar
-
   - source: "@quartz-community/breadcrumbs"
     enabled: true
     layout:
       position: beforeBody
       priority: 5
       condition: not-index
-
   - source: "@quartz-community/comments"
     enabled: false
     options:
@@ -268,24 +232,20 @@ plugins:
     layout:
       position: afterBody
       priority: 10
-
   - source: "@quartz-community/footer"
     enabled: true
     options:
       links:
-        "Buy me a Coffee": "https://buymeacoffee.com/silver.xoxo"
-        "Join the Discord": "https://discord.gg/Mbg6T4DFzt"
-        "LinkedIn": "https://linkedin.com/in/armaan-nain"
+        Buy me a Coffee: https://buymeacoffee.com/silver.xoxo
+        Join the Discord: https://discord.gg/Mbg6T4DFzt
+        LinkedIn: https://linkedin.com/in/armaan-nain
     layout:
       position: footer
       priority: 50
-
   - source: github:quartz-community/github-flavored-markdown
     enabled: true
-
   - source: "@quartz-community/recent-notes"
     enabled: false
-
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
@@ -294,12 +254,10 @@ plugins:
       position: left
       priority: 25
       display: mobile-only
-
   - source: "@quartz-community/bases-page"
     enabled: true
     options: {}
     order: 50
-
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
@@ -317,12 +275,16 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-
   - source: "@quartz-community/unlisted-pages"
     enabled: true
     options: {}
     order: 45
-
+  - source: github:quartz-community/obsidian-plugin-excalidraw
+    enabled: true
+    options:
+      enableInteraction: true   # Enables pan and zoom controls
+      darkMode: "auto"          # Follows Quartz light/dark toggle
+      exportPadding: 20
   - source: "@quartz-community/encrypted-pages"
     enabled: true
     options:
@@ -331,14 +293,19 @@ plugins:
       unlistWhenEncrypted: false
       outputPath: static/encryptedContentIndex.json
     order: 900
-
   - source: "@quartz-community/stacked-pages"
     enabled: false
     layout:
       position: afterBody
       priority: 50
       display: all
-
+  - source: github:quartz-community/obsidian-plugin-excalidraw
+    enabled: true
+    options:
+      enableInteraction: true
+      darkMode: auto
+      exportPadding: 20
+    order: 50
 layout:
   groups:
     toolbar:
