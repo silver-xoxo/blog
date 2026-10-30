@@ -1,25 +1,24 @@
 ---
 publish: true
 title: Master Index
-created: 2026-10-22T10:46:07.924Z
-modified: 2026-10-22T10:57:46.535Z
+description: This Mega thread is the index to all the notes and research work.
+created: 2026-10-25
+modified: 2026-10-30T12:03:50.417Z
+tags:
+  - index
 ---
 
 ---
 
-> [!info] Welcome
-> Hi Hacker, Welcome to **silversec.in**. This is my digital garden where I document my cybersecurity research, methodologies, and ideas.
+1. Pentesting \[ OSCP / CPTS ]
+   - [[1. Index|Index]]
+2. Wireless Pentesting \[ OSWP ]
+   - [[2. Index|Index]]
+3. Security Analyst \[ CDSA ]
+   - [[3. Index|Index]]
+4. Exploit Development \[ OSED / OSEE ]
+5. Research Work
+6. Write ups
+7. About Me
 
----
-
-- **[[0x00 - Index | 0x00 - Research Work]]**
-- **[[0x01 - Index | 0x01 - Pentesting]]**
-- **[[0x02 - Index | 0x02 - Wi-Fi Pentesting]]**
-
-https://referral.hackthebox.com/mzX9PGu
-
----
-
-> [!Quote] About Me
->
-> Hi, I am Armaan Nain. I popularly go by the nickname "Silver". I have been documenting my things here from 3rd October 2026. If you wanna talk to me sometime after reading. Reach out to me on Discord ( silv3r\_xoxo ) or [Linkedin](https://www.linkedin.com/in/armaan-nain)
+[[pokemon]]
