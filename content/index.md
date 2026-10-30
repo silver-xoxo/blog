@@ -3,7 +3,7 @@ publish: true
 title: Master Index
 description: This Mega thread is the index to all the notes and research work.
 created: 2026-10-25
-modified: 2026-10-24T19:23:29.869Z
+modified: 2026-10-30T12:03:50.417Z
 tags:
   - index
 ---
@@ -20,3 +20,5 @@ tags:
 5. Research Work
 6. Write ups
 7. About Me
+
+[[pokemon]]
