@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: silver-xoxo
-  pageTitleSuffix: " | silversec.in"
+  pageTitleSuffix: " | Armaan Nain"
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -131,11 +131,12 @@ plugins:
   - source: "@quartz-community/favicon"
     enabled: true
   - source: "@quartz-community/og-image"
-    enabled: false
+    enabled: true
     options:
       colorScheme: darkMode
       width: 1200
       height: 630
+      excludeRoot: false
   - source: "@quartz-community/cname"
     enabled: true
   - source: "@quartz-community/canvas-page"
